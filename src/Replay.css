@@ -29,6 +29,30 @@
   font-weight: 500;
 }
 
+.wrong {
+	font-size: 3em;
+  margin: 0 auto;
+  animation: lose 5s linear 0s infinite;
+}
+
+@keyframes lose {
+	0% {
+		color: #0f0c29;
+	}
+	25% {
+		color: #c94b4b;
+	}
+	50% {	
+		color: #4b134f;
+	}
+	75% {
+		color: #c94b4b;
+	}
+	100% {
+		color: #0f0c29;
+	}
+}
+
 @keyframes win {
   0% {
     color: #1fa2ff;

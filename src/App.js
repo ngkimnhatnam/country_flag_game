@@ -11,7 +11,7 @@ class App extends Component {
       countries: [],
       correctOne: '',
       chosenAnswer: '',
-      isMatch: false
+      isMatch: 0
     }
     this.handleClick = this.handleClick.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -37,7 +37,7 @@ class App extends Component {
         countries, 
         correctOne: countries[Math.floor(Math.random()*countries.length)],
         chosenAnswer: '',
-        isMatch: false}))
+        isMatch: 0}))
   }
   
   handleClick(e){
@@ -46,7 +46,7 @@ class App extends Component {
   }
   handleSubmit(e){
     e.preventDefault();
-    this.state.chosenAnswer === this.state.correctOne.name ? this.setState({isMatch: true}):this.setState({isMatch: false})
+    this.state.chosenAnswer === this.state.correctOne.name ? this.setState({isMatch: 1}):this.setState({isMatch: 2})
   }
   
   render() {
@@ -58,7 +58,7 @@ class App extends Component {
         <Navbar />
         <div className='mainDisplay'>
           {displayFlag}
-          {this.state.isMatch ? <Replay onHandleFetchAll={this.fetchAll} correctOne={this.state.correctOne}/>:
+          {this.state.isMatch===1 || this.state.isMatch===2 ? <Replay onHandleFetchAll={this.fetchAll} correctOne={this.state.correctOne} guessStatus={this.state.isMatch}/>:
             <Form countries={this.state.countries} correctOne={this.state.correctOne}
             onHandleClick={this.handleClick} onHandleSubmit={this.handleSubmit} />}
         </div>
