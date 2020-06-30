@@ -37,19 +37,19 @@
 
 @keyframes lose {
 	0% {
-		color: #0f0c29;
+    color: #0f0c29;
 	}
 	25% {
-		color: #c94b4b;
+    color: #c94b4b;
 	}
 	50% {	
-		color: #4b134f;
+    color: #4b134f;
 	}
 	75% {
-		color: #c94b4b;
+    color: #c94b4b;
 	}
 	100% {
-		color: #0f0c29;
+    color: #0f0c29;
 	}
 }
 
