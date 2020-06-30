@@ -1,0 +1,48 @@
+.replay {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.replay button {
+  width: 85%;
+  background: #076670;
+  color: #DDEBED;
+  border: 1px solid #076670;
+  border-radius: 20px;
+  font-size: 2em;
+}
+
+.replay button:hover {
+  cursor: pointer;
+}
+
+.congrats {
+  font-size: 3em;
+  margin: 0 auto;
+  animation: win 5s linear 0s infinite;
+}
+
+.correct {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+@keyframes win {
+  0% {
+    color: #1fa2ff;
+  }
+  25% {
+    color: #a6ffcb;
+  }
+  50% {
+    color: #12d8fa;
+  }
+  75% {
+    color: #a6ffcb;
+  }
+  100% {
+    color: #1fa2ff;
+  }
+}

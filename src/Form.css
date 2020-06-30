@@ -1,0 +1,40 @@
+.answerForm {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.choices {
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+.answers {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.submitButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.submitButton button {
+  width: 30%;
+  background: #076670;
+  color: #DDEBED;
+  border: 1px solid #076670;
+  border-radius: 20px;
+  font-size: 2em;
+  
+}
+
+.submitButton button:hover {
+  cursor: pointer;
+  background: #97E7F0;
+  border-color: #97E7F0;
+}
